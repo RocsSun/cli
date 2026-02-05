@@ -9,6 +9,7 @@ runs:
         if ! command -v cargo-audit &> /dev/null; then
           cargo install cargo-audit
         fi
+        cargo install cargo-audit
         cargo audit
 
     - name: Fmt
